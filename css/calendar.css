@@ -1,0 +1,144 @@
+/* Copyright (c) 2013 Andreas Ihrig (RoboMod) Licensed under the MIT license */
+
+#calendartable {
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+}
+
+#calendartable td {
+    text-align: center;
+    vertical-align: top;
+    padding: 0px 10px 0px 10px;
+}
+
+#calendarpagesbox {
+    text-align: center;
+    background: #00adef;
+    color:white;
+    padding: 5px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px #888, 0 0 3px #333 inset;
+}
+#calendarpagescurrent {
+    text-decoration: underline overline;
+    display: inline;
+    padding: 0px 3px;
+}
+#calendarpagesbox:hover {
+    box-shadow: 0 2px 5px #888, 0 0 3px #333 inset;
+}
+#calendarpagesbox a {
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#2e3192;
+    padding: 0px 3px;
+}
+#calendarpagesbox a:hover {
+    color: white;
+}
+
+div.calendarentry {
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px #888;
+    /*display: inline-block;*/
+    /*width: 100%;*/
+    text-align: left;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+div.calendarentry h3 {
+    color:#2e3192;
+}
+
+div.calendarentrytoday {
+    background: #ccc;
+    color: white;
+}
+
+div.calendarentry:hover, div.calendarentryhover {
+    box-shadow: 0 0 5px 2px #2e3192;
+}
+
+div.calendarentry p.date {
+    margin-bottom: 5px;  
+}
+
+/*div.calendarentry h3 {
+    margin-bottom: 5px;  
+    margin-top: 20px;
+}*/
+
+div.calendarentry img, .calendarimage {
+/*    margin-bottom: 5px;  */
+    float:right; 
+    border-radius: 5px;
+ }
+ 
+div.calendarentry p {
+    margin-bottom: 0;
+}
+
+p.pastfuture {
+    float: right;
+    margin-bottom: 0 !important;
+    position: relative;
+    top:15px;
+}
+ 
+div.calendarentry p.moreinfo {
+    margin-bottom: 0px;  
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#calendar {
+    width: 100%;
+    /*height: 100%;*/
+    /*float:right;*/
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#calendar h2 {
+    padding-top:2px;
+    font-size: 18px;
+    color:#2e3192;
+}
+
+#calendarpoweredby {
+    float: right;
+    margin-bottom: 5px;
+}
+
+#calendarpoweredby a {
+    text-decoration: none;
+    color: #2e3192;
+}
+
+#calendarpoweredby a:hover {
+    color: #00adef;
+}
+
+/* LOADING */
+.toggle-loading {
+    /*border: 1px solid #fff;*/
+    position: absolute;
+    text-align:center;
+    padding:30px;
+}
+.toggle-loading  .icon {
+    /*float: left;*/
+    width: 30px;
+    height: 30px;
+    padding: 10px 10px 10px 10px;
+    background: url(../images/toggle-loading.gif) center center no-repeat;
+}
+.toggle-loading  .copy {
+    /*float: left;*/
+    padding: 10px 0;
+    color: #666666;
+}
