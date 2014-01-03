@@ -17,8 +17,8 @@
             <% if $EndDate.Time && $EndDate.Time != "12:00am" %>$EndDate.FormatI18N('- %H:%M Uhr')<% end_if %></strong>
         </p>
 
-        <% if Description %>
-                <p>$Description</p>
+        <% if Teaser %>
+                <p>$Teaser</p>
         <% end_if %>
 
         <% if Link %>

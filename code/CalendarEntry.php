@@ -8,6 +8,7 @@ class CalendarEntry extends DataObject{
         "EndDate" => "SS_Datetime",
         "Linktitle" => "Text",
         "Link" => "Text",
+		"Teaser" => "Text",
         "Description" => "Text"
     );
 
@@ -43,6 +44,7 @@ class CalendarEntry extends DataObject{
             new TextField('Title',"Event Title"),
             $startdatefield,
             $enddatefield,
+            new TextField('Teaser',"Teaser"),
             new TextareaField('Description'),
             new TextField('Linktitle'),
             new TextField('Link'),
