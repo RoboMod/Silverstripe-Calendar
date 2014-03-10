@@ -2,7 +2,7 @@
 // Copyright (c) 2013 Andreas Ihrig (RoboMod) Licensed under the MIT license
 
 class CalendarEntry extends DataObject{
-    static $db = array(
+    private static $db = array(
         "Title" => "Text",
         "StartDate" => "SS_Datetime",
         "EndDate" => "SS_Datetime",
@@ -12,7 +12,7 @@ class CalendarEntry extends DataObject{
         "Description" => "Text"
     );
 
-    static $has_one = array(
+    private static $has_one = array(
         "CalendarPage" => "CalendarPage",
         "Image" => "Image"
     );

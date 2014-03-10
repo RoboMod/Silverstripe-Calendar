@@ -3,15 +3,15 @@
 
 class CalendarPage extends Page {
 
-    static $db = array(
+    private static $db = array(
         "ManageAllEvents" => "Boolean"
     );
 
-    static $has_many = array(
+    private static $has_many = array(
         "Events" => "CalendarEntry"
     );
     
-    static $has_one = array(
+    private static $has_one = array(
         'Pagelogo' => 'Image'
     );
 
@@ -69,7 +69,7 @@ class CalendarPage extends Page {
 
 class CalendarPage_Controller extends Page_Controller {
     
-    static $allowed_actions = array(
+    private static $allowed_actions = array(
         'json',
         'show'
     );
