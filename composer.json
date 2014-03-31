@@ -1,0 +1,15 @@
+{
+    "name": "robomod/silverstripe-calendar",
+    "description": "Integrates a event calendar into silverstripe",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "RoboMod",
+            "email": "mod.andy@gmx.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+
+    }
+}
